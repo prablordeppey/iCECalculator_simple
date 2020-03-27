@@ -19,10 +19,6 @@ make sure to provide the full path to the icon on https://github.com/icetee4eva/
 ```python
 python unknown.py
 ```
-or
-```python
-python unknown_support.py
-```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
