@@ -1,8 +1,33 @@
 # iCECalculator_simple
-A simple calculator designed overnight with tkinter. Help of PAGE.
 
-The only changes to make is to provide the full path to the icon on line 66 in the *unknown.py* file.
+iCECalculator_simple is a simple calculator developed with python using the tkinter library and PAGE designer.
 
-Final output should be like ....
+## Screenshot
 
 ![Screenshot](screenshot.png)
+
+## Setup
+
+make sure to provide the full path to the icon on https://github.com/icetee4eva/iCECalculator_simple/blob/980841eb0363949b8159cb13db49247c51e6ca38/unknown.py#L66 in the *unknown.py* file.
+
+```
+ top.wm_iconbitmap('put_the_icons_fullpath_here')
+```
+
+## Usage
+
+```python
+python unknown.py
+```
+or
+```python
+python unknown_support.py
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
