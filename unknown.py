@@ -62,7 +62,8 @@ class Toplevel1:
         top.minsize(120, 1)
         top.maxsize(1370, 749)
         top.resizable(0, 0)
-        top.title("New Toplevel")
+        top.wm_title("iCE Calculator")
+        top.wm_iconbitmap('C://Users//iCETEE//Desktop//page//icecalc.ico')
         top.configure(background="#4f7975")
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="#4f7975")
@@ -113,7 +114,7 @@ class Toplevel1:
                 , relwidth=0.941)
         self.Frame3.configure(relief="groove")
         self.Frame3.configure(background="#c6c9af")
-        self.Frame3.configure(cursor="fleur")
+        self.Frame3.configure(cursor="arrow")
 
         self.Frame4 = tk.Frame(self.Frame3)
         self.Frame4.place(relx=0.023, rely=0.039, relheight=0.94, relwidth=0.554)
