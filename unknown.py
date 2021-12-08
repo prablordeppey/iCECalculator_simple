@@ -5,8 +5,6 @@
 #  in conjunction with Tcl version 8.6
 #    Mar 26, 2020 03:48:14 PM PDT  platform: Windows NT
 
-import sys
-
 try:
     import Tkinter as tk
 except ImportError:

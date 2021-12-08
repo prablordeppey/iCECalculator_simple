@@ -41,7 +41,7 @@ jobs:
     #     GITHUB_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
 
     # ISORT
-    - name: Checking Isort
-      uses: jamescurtin/isort-action@master
-      with:
-        requirementsFiles: "requirements.txt requirements-test.txt"
+    # - name: Checking Isort
+    #   uses: jamescurtin/isort-action@master
+    #   with:
+    #     requirementsFiles: "requirements.txt requirements-test.txt"
