@@ -30,3 +30,5 @@ jobs:
       with:
         name: IceCalculator
         path: src/dist/windows
+      env:
+        GITHUB_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
