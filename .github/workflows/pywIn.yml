@@ -1,0 +1,34 @@
+name: Package Application with Pyinstaller
+
+on:
+  push:
+    branches: [ icetee4eva-patch-1 ]
+  pull_request:
+    branches: [ icetee4eva-patch-1 ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Generate requirements file
+      uses: ryan-rozario/pipreqs-action-cpy@master
+
+    - name: Install Required Libraries
+      run: |
+        pip install -r requirements.txt --upgrade pip
+
+    - name: Package Application
+      uses: JackMcKew/pyinstaller-action-windows@main
+      with:
+        path: src
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: IceCalculator
+        path: src/dist/windows
+      env:
+        GITHUB_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
